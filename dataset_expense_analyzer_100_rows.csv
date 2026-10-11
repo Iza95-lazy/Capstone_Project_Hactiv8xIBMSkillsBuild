@@ -1,0 +1,101 @@
+No,Tanggal,Deskripsi Transaksi,Kategori,Nominal (IDR),Status / Catatan
+1,2026-09-01,Makan Siang Nasi Padang,Makanan & Minuman,90000,Normal
+2,2026-09-01,Bensin Mobil,Transportasi,198000,Normal
+3,2026-09-01,Pendaftaran Event / Web Seminar,Pendidikan & Karir,329000,Normal
+4,2026-09-02,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,132000,Normal
+5,2026-09-02,Kopi Kekinian,Makanan & Minuman,79000,Normal
+6,2026-09-02,Belanja Bulanan Supermarket,Kebutuhan Pokok,674000,Normal
+7,2026-09-03,Pendaftaran Event / Web Seminar,Pendidikan & Karir,409000,Normal
+8,2026-09-03,Beli Baju / Fashion,Gaya Hidup & Hiburan,279000,⚠️ Overspending
+9,2026-09-03,Listrik PLN,Tagihan & Utilitas,438000,Wajib (Fixed)
+10,2026-09-04,Parkir,Transportasi,118000,Normal
+11,2026-09-04,Wifi Internet Bulanan,Tagihan & Utilitas,160000,Wajib (Fixed)
+12,2026-09-04,Listrik PLN,Tagihan & Utilitas,97000,Wajib (Fixed)
+13,2026-09-05,Makan Malam Restoran,Makanan & Minuman,108000,⚠️ Overspending
+14,2026-09-05,Listrik PLN,Tagihan & Utilitas,423000,Wajib (Fixed)
+15,2026-09-05,Belanja Bulanan Supermarket,Kebutuhan Pokok,487000,Normal
+16,2026-09-06,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,743000,Normal
+17,2026-09-06,Langganan Streaming,Tagihan & Utilitas,148000,Wajib (Fixed)
+18,2026-09-06,Makan Siang Nasi Padang,Makanan & Minuman,78000,Normal
+19,2026-09-07,Listrik PLN,Tagihan & Utilitas,487000,Wajib (Fixed)
+20,2026-09-07,Belanja Bahan Makanan,Makanan & Minuman,91000,Normal
+21,2026-09-07,Biaya Kursus Online,Pendidikan & Karir,133000,Normal
+22,2026-09-08,Wifi Internet Bulanan,Tagihan & Utilitas,393000,Wajib (Fixed)
+23,2026-09-08,Pendaftaran Event / Web Seminar,Pendidikan & Karir,381000,Normal
+24,2026-09-08,Obat & Kesehatan,Kebutuhan Pokok,275000,Normal
+25,2026-09-09,Beli Buku / E-Book,Pendidikan & Karir,133000,Normal
+26,2026-09-09,Top-up Game,Gaya Hidup & Hiburan,377000,⚠️ Overspending
+27,2026-09-09,Belanja Bulanan Supermarket,Kebutuhan Pokok,432000,Normal
+28,2026-09-10,Kopi Kekinian,Makanan & Minuman,28000,Normal
+29,2026-09-10,Pulsa & Paket Data,Tagihan & Utilitas,187000,Wajib (Fixed)
+30,2026-09-10,Servis Motor & Ganti Oli,Transportasi,234000,Normal
+31,2026-09-11,Wifi Internet Bulanan,Tagihan & Utilitas,385000,Wajib (Fixed)
+32,2026-09-11,Nongkrong Cafe,Gaya Hidup & Hiburan,123000,⚠️ Overspending
+33,2026-09-11,Bensin Mobil,Transportasi,200000,Normal
+34,2026-09-12,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,698000,Normal
+35,2026-09-12,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,470000,Normal
+36,2026-09-12,Servis Motor & Ganti Oli,Transportasi,136000,Normal
+37,2026-09-13,Makan Siang Nasi Padang,Makanan & Minuman,59000,Normal
+38,2026-09-13,Parkir,Transportasi,118000,Normal
+39,2026-09-13,Belanja Bahan Makanan,Makanan & Minuman,117000,⚠️ Overspending
+40,2026-09-14,Hobi & Rekreasi,Gaya Hidup & Hiburan,178000,⚠️ Overspending
+41,2026-09-14,Pesan Antar Online,Makanan & Minuman,49000,Normal
+42,2026-09-14,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,756000,Normal
+43,2026-09-15,Makan Malam Restoran,Makanan & Minuman,131000,⚠️ Overspending
+44,2026-09-15,Nonton Bioskop,Gaya Hidup & Hiburan,184000,⚠️ Overspending
+45,2026-09-15,Servis Motor & Ganti Oli,Transportasi,243000,Normal
+46,2026-09-16,Biaya Kursus Online,Pendidikan & Karir,480000,Normal
+47,2026-09-16,Obat & Kesehatan,Kebutuhan Pokok,303000,Normal
+48,2026-09-16,Wifi Internet Bulanan,Tagihan & Utilitas,326000,Wajib (Fixed)
+49,2026-09-17,Belanja Bulanan Supermarket,Kebutuhan Pokok,713000,Normal
+50,2026-09-17,Nonton Bioskop,Gaya Hidup & Hiburan,107000,⚠️ Overspending
+51,2026-09-17,Wifi Internet Bulanan,Tagihan & Utilitas,79000,Wajib (Fixed)
+52,2026-09-18,Belanja Bulanan Supermarket,Kebutuhan Pokok,187000,Normal
+53,2026-09-18,Nonton Bioskop,Gaya Hidup & Hiburan,322000,⚠️ Overspending
+54,2026-09-18,Bensin Mobil,Transportasi,178000,Normal
+55,2026-09-19,Belanja Bulanan Supermarket,Kebutuhan Pokok,371000,Normal
+56,2026-09-19,Perlengkapan Mandi & Cuci,Kebutuhan Pokok,316000,Normal
+57,2026-09-19,Pendaftaran Event / Web Seminar,Pendidikan & Karir,152000,Normal
+58,2026-09-20,Pulsa & Paket Data,Tagihan & Utilitas,393000,Wajib (Fixed)
+59,2026-09-20,Pulsa & Paket Data,Tagihan & Utilitas,314000,Wajib (Fixed)
+60,2026-09-20,Kopi Kekinian,Makanan & Minuman,77000,Normal
+61,2026-09-21,Listrik PLN,Tagihan & Utilitas,351000,Wajib (Fixed)
+62,2026-09-21,Servis Motor & Ganti Oli,Transportasi,66000,Normal
+63,2026-09-21,Pesan Antar Online,Makanan & Minuman,35000,Normal
+64,2026-09-22,Makan Siang Nasi Padang,Makanan & Minuman,104000,⚠️ Overspending
+65,2026-09-22,Belanja Bulanan Supermarket,Kebutuhan Pokok,385000,Normal
+66,2026-09-22,Beli Baju / Fashion,Gaya Hidup & Hiburan,326000,⚠️ Overspending
+67,2026-09-23,Pendaftaran Event / Web Seminar,Pendidikan & Karir,345000,Normal
+68,2026-09-23,Gojek/Grab Ride,Transportasi,216000,Normal
+69,2026-09-23,Bensin Motor,Transportasi,34000,Normal
+70,2026-09-24,Top-up Game,Gaya Hidup & Hiburan,266000,⚠️ Overspending
+71,2026-09-24,Nonton Bioskop,Gaya Hidup & Hiburan,394000,⚠️ Overspending
+72,2026-09-24,Beli Buku / E-Book,Pendidikan & Karir,81000,Normal
+73,2026-09-25,Biaya Kursus Online,Pendidikan & Karir,459000,Normal
+74,2026-09-25,Bensin Mobil,Transportasi,58000,Normal
+75,2026-09-25,Beli Baju / Fashion,Gaya Hidup & Hiburan,266000,⚠️ Overspending
+76,2026-09-26,Pulsa & Paket Data,Tagihan & Utilitas,177000,Wajib (Fixed)
+77,2026-09-26,Hobi & Rekreasi,Gaya Hidup & Hiburan,100000,Normal
+78,2026-09-26,Pendaftaran Event / Web Seminar,Pendidikan & Karir,478000,Normal
+79,2026-09-27,Kopi Kekinian,Makanan & Minuman,62000,Normal
+80,2026-09-27,Nongkrong Cafe,Gaya Hidup & Hiburan,159000,⚠️ Overspending
+81,2026-09-27,Kopi Kekinian,Makanan & Minuman,117000,⚠️ Overspending
+82,2026-09-28,Top-up Game,Gaya Hidup & Hiburan,282000,⚠️ Overspending
+83,2026-09-28,Hobi & Rekreasi,Gaya Hidup & Hiburan,388000,⚠️ Overspending
+84,2026-09-28,Beli Baju / Fashion,Gaya Hidup & Hiburan,147000,⚠️ Overspending
+85,2026-09-29,Bensin Motor,Transportasi,158000,Normal
+86,2026-09-29,Belanja Bulanan Supermarket,Kebutuhan Pokok,421000,Normal
+87,2026-09-29,Snack & Camilan,Makanan & Minuman,142000,⚠️ Overspending
+88,2026-09-30,Belanja Bulanan Supermarket,Kebutuhan Pokok,158000,Normal
+89,2026-09-30,Kopi Kekinian,Makanan & Minuman,37000,Normal
+90,2026-09-30,Pesan Antar Online,Makanan & Minuman,80000,Normal
+91,2026-10-01,Snack & Camilan,Makanan & Minuman,83000,Normal
+92,2026-10-01,Belanja Bulanan Supermarket,Kebutuhan Pokok,734000,Normal
+93,2026-10-01,Hobi & Rekreasi,Gaya Hidup & Hiburan,339000,⚠️ Overspending
+94,2026-10-02,Air PDAM,Tagihan & Utilitas,154000,Wajib (Fixed)
+95,2026-10-02,Biaya Kursus Online,Pendidikan & Karir,172000,Normal
+96,2026-10-02,Beli Baju / Fashion,Gaya Hidup & Hiburan,393000,⚠️ Overspending
+97,2026-10-03,Pulsa & Paket Data,Tagihan & Utilitas,211000,Wajib (Fixed)
+98,2026-10-03,Makan Siang Nasi Padang,Makanan & Minuman,137000,⚠️ Overspending
+99,2026-10-03,Belanja Bulanan Supermarket,Kebutuhan Pokok,175000,Normal
+100,2026-10-04,Servis Motor & Ganti Oli,Transportasi,77000,Normal

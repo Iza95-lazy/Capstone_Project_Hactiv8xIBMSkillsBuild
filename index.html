@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Analyzer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       APP SHELL — sidebar + main content area
+       ════════════════════════════════════════ -->
+  <div class="app-shell">
+
+    <!-- ── SIDEBAR NAV ── -->
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Logo / Brand -->
+      <div class="sidebar__brand">
+        <span class="brand-icon">&#9783;</span>
+        <span class="brand-name">FinTrack</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar__nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li class="nav-item active" data-page="dashboard">
+            <span class="nav-icon">&#9632;</span>
+            <span class="nav-label">Dashboard</span>
+          </li>
+          <li class="nav-item" data-page="transactions">
+            <span class="nav-icon">&#8644;</span>
+            <span class="nav-label">Transactions</span>
+          </li>
+          <li class="nav-item" data-page="budget">
+            <span class="nav-icon">&#9733;</span>
+            <span class="nav-label">Budget</span>
+          </li>
+          <li class="nav-item" data-page="reports">
+            <span class="nav-icon">&#9741;</span>
+            <span class="nav-label">Reports</span>
+          </li>
+          <li class="nav-item" data-page="settings">
+            <span class="nav-icon">&#9881;</span>
+            <span class="nav-label">Settings</span>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer / User Profile -->
+      <div class="sidebar__profile">
+        <div class="profile-avatar" id="profileAvatar">DR</div>
+        <div class="profile-info">
+          <span class="profile-name" id="profileName">Dzaky Rafif</span>
+          <span class="profile-role">Finance Manager</span>
+        </div>
+      </div>
+
+    </aside>
+    <!-- /SIDEBAR -->
+
+    <!-- ── MAIN AREA ── -->
+    <div class="main-area">
+
+      <!-- TOP NAV BAR -->
+      <header class="topnav">
+        <!-- Mobile hamburger toggle -->
+        <button class="topnav__hamburger" id="hamburgerBtn" aria-label="Toggle sidebar">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="topnav__title">
+          <h1 id="pageTitle">Dashboard</h1>
+          <p class="topnav__subtitle" id="pageSubtitle">Welcome back, Dzaky Rafif</p>
+        </div>
+
+        <!-- Search + Filter Controls -->
+        <div class="topnav__controls">
+          <div class="search-wrapper">
+            <span class="search-icon">&#128269;</span>
+            <input
+              type="text"
+              id="searchInput"
+              class="search-input"
+              placeholder="Search transactions…"
+              aria-label="Search transactions"
+            />
+          </div>
+          <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+      </header>
+      <!-- /TOP NAV -->
+
+      <!-- PAGE CONTENT -->
+      <main class="content" id="mainContent">
+
+        <!-- ── KPI CARDS ROW ── -->
+        <section class="kpi-grid" aria-label="Key Performance Indicators">
+          <!-- Card 1: Total Spend -->
+          <article class="kpi-card" id="kpiTotalSpend">
+            <div class="kpi-card__icon kpi-card__icon--spend">&#128179;</div>
+            <div class="kpi-card__body">
+              <p class="kpi-card__label">Total Spend</p>
+              <p class="kpi-card__value" id="kpiValueTotalSpend">Rp 0</p>
+              <p class="kpi-card__delta" id="kpiDeltaTotalSpend"></p>
+            </div>
+          </article>
+
+          <!-- Card 2: Monthly Budget -->
+          <article class="kpi-card" id="kpiMonthlyBudget">
+            <div class="kpi-card__icon kpi-card__icon--budget">&#128181;</div>
+            <div class="kpi-card__body">
+              <p class="kpi-card__label">Monthly Budget</p>
+              <p class="kpi-card__value" id="kpiValueMonthlyBudget">Rp 0</p>
+              <p class="kpi-card__delta" id="kpiDeltaMonthlyBudget"></p>
+            </div>
+          </article>
+
+          <!-- Card 3: Remaining Budget -->
+          <article class="kpi-card" id="kpiRemaining">
+            <div class="kpi-card__icon kpi-card__icon--remaining">&#9989;</div>
+            <div class="kpi-card__body">
+              <p class="kpi-card__label">Remaining Budget</p>
+              <p class="kpi-card__value" id="kpiValueRemaining">Rp 0</p>
+              <p class="kpi-card__delta" id="kpiDeltaRemaining"></p>
+            </div>
+          </article>
+
+          <!-- Card 4: Overspending Alert Count -->
+          <article class="kpi-card" id="kpiAlerts">
+            <div class="kpi-card__icon kpi-card__icon--alert">&#9888;</div>
+            <div class="kpi-card__body">
+              <p class="kpi-card__label">Overspending Alerts</p>
+              <p class="kpi-card__value" id="kpiValueAlerts">0</p>
+              <p class="kpi-card__delta" id="kpiDeltaAlerts"></p>
+            </div>
+          </article>
+        </section>
+        <!-- /KPI CARDS -->
+
+        <!-- ── MIDDLE ROW: Category Breakdown + Budget Tracker ── -->
+        <div class="mid-row">
+
+          <!-- Category Breakdown -->
+          <section class="card category-breakdown" aria-label="Expense breakdown by category">
+            <div class="card__header">
+              <h2 class="card__title">Expense by Category</h2>
+              <span class="card__badge" id="categoryCount">0 categories</span>
+            </div>
+            <ul class="category-list" id="categoryList" aria-label="Category list">
+              <!-- Populated dynamically via JS -->
+            </ul>
+          </section>
+
+          <!-- Budget Goal Tracker -->
+          <section class="card budget-tracker" aria-label="Budget goal tracker">
+            <div class="card__header">
+              <h2 class="card__title">Budget Goal Tracker</h2>
+              <span class="card__badge card__badge--accent" id="budgetStatus">On Track</span>
+            </div>
+            <div class="budget-tracker__list" id="budgetTrackerList">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </section>
+
+        </div>
+        <!-- /MIDDLE ROW -->
+
+        <!-- ── TRANSACTION TABLE ── -->
+        <section class="card transaction-section" aria-label="Expense transactions">
+          <div class="card__header">
+            <h2 class="card__title">Recent Transactions</h2>
+            <span class="card__badge" id="transactionCount">0 results</span>
+          </div>
+          <div class="table-wrapper">
+            <table class="transaction-table" id="transactionTable" aria-label="Transaction table">
+              <colgroup>
+                <col /><!-- # -->
+                <col /><!-- Date -->
+                <col /><!-- Description -->
+                <col /><!-- Category -->
+                <col /><!-- Type -->
+                <col /><!-- Amount -->
+                <col /><!-- Status -->
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Type</th>
+                  <th scope="col" class="align-right">Amount (IDR)</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="transactionTableBody">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+          <!-- Pagination info -->
+          <div class="table-footer">
+            <span id="tableInfo">Showing 0 of 0 transactions</span>
+          </div>
+        </section>
+        <!-- /TRANSACTION TABLE -->
+
+      </main>
+      <!-- /PAGE CONTENT -->
+
+    </div>
+    <!-- /MAIN AREA -->
+
+  </div>
+  <!-- /APP SHELL -->
+
+  <!-- Sidebar overlay for mobile -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
